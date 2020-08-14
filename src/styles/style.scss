@@ -81,12 +81,13 @@ a {text-decoration: none;}
                 height: 100%;
                 background-color: black;
                 font-family: 'Digital';
-                color: green; 
+                color: white; 
                 font-size: 35pt;
                 transition: background-color 0.5s ease-out;
                 border: none;
                 &:hover {
                 background-color: rgb(50, 50, 50);
+                color: green;
             }
             }
         }
@@ -111,17 +112,43 @@ a {text-decoration: none;}
     }
 }
 
-#mode-button {
-    font-family: 'Digital';
-    position: relative;
-    height: 10vh;
-    width: 100%;
-    font-size: 35pt;
-    color: green;
-    background-color: black;
-    transition: background-color 0.5s ease-out;
-    border: none;
-    &:hover {
-        background-color: rgb(50, 50, 50);
+.mode {
+    display: flex;
+    &__btn-clear {
+        font-family: 'Digital';
+        position: relative;
+        height: 10vh;
+        width: 100%;
+        font-size: 35pt;
+        color: green;
+        background-color: black;
+        transition: background-color 0.5s ease-out;
+        border: none;
+        &:hover {
+            background-color: rgb(50, 50, 50);
+        }
+    }
+    &__btn-back {
+        font-family: 'Digital';
+        position: relative;
+        height: 10vh;
+        width: 100%;
+        font-size: 35pt;
+        color: green;
+        background-color: black;
+        transition: background-color 0.5s ease-out;
+        border: none;
+        &:hover {
+            background-color: rgb(50, 50, 50);
+        }
+    }   
+}
+
+@media only screen and (max-width: 1280px) {
+    #history {
+        display: none
+    }
+    #calculator {
+        width: 100vw;
     }
 }
